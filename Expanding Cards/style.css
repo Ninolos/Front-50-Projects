@@ -20,14 +20,14 @@ body{
 }
 
 .panel{
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
     color: beige;
     cursor: pointer;
-    flex: 0.5px;
+    flex: 0.5;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
@@ -42,12 +42,13 @@ body{
     opacity: 0;
 }
 
-panel.active{
+.panel.active{
     flex: 5;
 }
 
 .panel.active h3{
     opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media(max-width: 480px){
