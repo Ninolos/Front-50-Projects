@@ -61,12 +61,14 @@ body{
 
 .circle button#open {
     left: 60%;
+    cursor: pointer;
 }
 
 .circle button#close {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;
+    cursor: pointer;
 }
 
 .container.show-nav + nav li {
